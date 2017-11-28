@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>热气球</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #box{
+
+            width: 1320px;
+            height: 700px;
+            margin: 0 auto;
+            overflow: hidden;
+            border: 1px solid #cccccc;
+            background: #ddf5f7;
+            position: relative;
+            -webkit-animation:background 30s linear infinite normal; /*动画循环向前播放*/
+            -moz-animation: background 30s linear infinite normal;
+            -o-animation: background 30s linear infinite normal;
+            animation:background 30s linear infinite normal;
+        }
+        @-webkit-keyframes background {
+            0%{background:#ddf5f7;}
+            25%{background: #350847;}
+            50%{background: #0f192c;}
+            75%{background: #f9c7b8;}
+            100%{background: #ddf5f7;}
+        }
+        @-moz-keyframes background {
+            0%{background:#ddf5f7;}
+            25%{background: #350847;}
+            50%{background: #0f192c;}
+            75%{background: #f9c7b8;}
+            100%{background: #ddf5f7;}
+        }
+        @-o-keyframes background {
+            0%{background:#ddf5f7;}
+            25%{background: #350847;}
+            50%{background: #0f192c;}
+            75%{background: #f9c7b8;}
+            100%{background: #ddf5f7;}
+        }
+
+        #box .skyline {
+            position: absolute;
+            z-index: 5;
+            width: 100%;
+            bottom: 26%;
+            height: 147px;
+            background: url("images/skyline.png") repeat no-repeat;
+        }
+        #box .groundBack{
+            position: absolute;
+            z-index: 100;
+            width: 100%;
+            bottom: 5%;
+            height:281px ;
+            background: url("images/groundBack.png") repeat-x;
+        }
+        #box .groundFront{
+            position: relative;
+            z-index: 110;
+            background: url("images/groundFront.png") repeat no-repeat center;
+            height: 301px;
+            top: 410px;
+        }
+        #box .groundMid{
+            background: url("images/groundMid.png") repeat no-repeat  ;
+            height:299px;
+            position: relative;
+            z-index: 106;
+            top:110px;
+            left:3px;
+        }
+        #box .dowEventCenter{
+            position: relative;
+            background: url("images/dowEventCenter.png") center no-repeat;
+            z-index: 105;
+            height: 229px;
+            bottom: 230px;
+            right: 300px;
+        }
+        #box .friendshipShell{
+            position: relative;
+            background: url("images/friendshipShell.png") no-repeat;
+            z-index: 106;
+            height:370px ;
+            top:-590px;
+            left: 270px;
+        }
+        #box .Glockenspiel{
+            position: relative;
+            background: url("images/Glockenspiel.png") no-repeat;
+           height: 263px;
+            z-index: 104;
+            bottom:900px;
+            left: 550px;
+        }
+        #box .beans{
+            position: absolute;
+            background: url("images/beans.png") no-repeat;
+            height: 201px;
+            z-index:1;
+            width: 88px;
+            top:330px ;
+            right:550px;
+        }
+        #box .Planetarium{
+            position: absolute;
+            background: url("images/Planetarium.png") no-repeat;
+            height: 285px;
+            width: 347px;
+            top:330px ;
+            right: 170px;
+            z-index: 105;
+        }
+        #box .balloon{
+            background: url("images/balloon.png") no-repeat no-repeat center;
+            height: 227px;
+            width:157px ;
+            position: absolute;
+            top:30px;
+            right: 30px;
+            z-index: 115;
+            -webkit-animation:balloon 30s infinite ease alternate;
+            -moz-animation:balloon 30s infinite ease alternate;
+            -o-animation:balloon 30s infinite ease alternate;
+           animation:balloon 30s infinite ease alternate;
+        }
+        @-webkit-keyframes balloon{
+            0%{right: -157px;
+                transform: rotate(0deg);}
+            25%{right: 25%;
+                transform: rotate(30deg);}
+            50%{right: 50%;
+                transform: rotate(60deg);}
+            75%{right: 75%;
+                transform: rotate(30deg);  }
+            100%{right: 100%;
+                transform: rotate(0deg);}
+
+        }
+        @-moz-keyframes balloon{
+            0%{right: -157px;
+                transform: rotate(0deg);}
+            25%{right: 25%;
+                transform: rotate(30deg);}
+            50%{right: 50%;
+                transform: rotate(60deg);}
+            75%{right: 75%;
+                transform: rotate(30deg);  }
+            100%{right: 100%;
+                transform: rotate(0deg);}
+
+        }
+        @-o-keyframes balloon{
+            0%{right: -157px;
+                transform: rotate(0deg);}
+            25%{right: 25%;
+                transform: rotate(30deg);}
+            50%{right: 50%;
+                transform: rotate(60deg);}
+            75%{right: 75%;
+                transform: rotate(30deg);  }
+            100%{right: 100%;
+                transform: rotate(0deg);}
+
+        }
+        @keyframes balloon{
+            0%{right: -157px;
+                transform: rotate(0deg);}
+            25%{right: 25%;
+                transform: rotate(30deg);}
+            50%{right: 50%;
+                transform: rotate(60deg);}
+            75%{right: 75%;
+                transform: rotate(30deg);  }
+            100%{right: 100%;
+                transform: rotate(0deg);}
+
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div class="groundBack"></div>
+        <div class="groundFront"></div>
+        <div class="groundMid"></div>
+        <div class="beans"></div>
+        <div class="dowEventCenter"></div>
+        <div class="friendshipShell"></div>
+        <div class="Glockenspiel"></div>
+        <div class="Planetarium"></div>
+        <div class="cloudSmall"></div>
+        <div class="balloon"></div>
+        <div class="skyline"></div>
+    </div>
+    <embed  src="Alan Walker - Faded (铃声).mp3" loop="true" width="0" height="0" >
+    </embed>
+</body>
+</html>
